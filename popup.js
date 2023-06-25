@@ -50,7 +50,14 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   function getMostUsedWord(wordCounts) {
-    var commonWords = ['the', 'a', 'an', 'and', 'or', 'is', 'are', 'in', 'on', 'of','to'];
+    var commonWords = [
+  'the', 'a', 'an', 'and', 'or', 'is', 'are', 'in', 'on', 'of',
+  'to', 'by', 'for', 'with', 'from', 'it', 'that', 'as', 'at',
+  'but', 'not', 'be', 'you', 'have', 'has', 'had', 'by', 'we',
+  'can', 'do', 'more', 'if', 'they', 'their', 'our', 'us', 'this',
+  '&','.','-','|'
+  // Add more common words here
+];
     var mostUsedWord = '';
     var maxCount = 0;
     for (var word in wordCounts) {
