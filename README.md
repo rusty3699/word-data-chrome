@@ -35,5 +35,7 @@ The code consists of the following main components:
 - You can modify the `commonWords` array in `popup.js` to add or remove common words that you want to exclude from the analysis.
 - Feel free to customize the appearance and functionality of the popup window in `popup.html` and `popup.js` as per your requirements.
 
+# This is in development. Please feel free to contribute to this project. 
+
 Made with ❤️ Anish Tipnis
 

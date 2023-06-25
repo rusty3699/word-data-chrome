@@ -1,17 +1,24 @@
+// Author: Anish
+
+// Event listener for the DOMContentLoaded event
 document.addEventListener('DOMContentLoaded', function() {
   var generateButton = document.getElementById('generateButton');
   generateButton.addEventListener('click', generateWordList);
 });
 
+// Function to generate the word list
 function generateWordList() {
+  // Query the active tab
   chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
     var currentTab = tabs[0];
+    // Execute the script to extract words from the tab
     chrome.scripting.executeScript({
       target: { tabId: currentTab.id },
       function: extractWords,
     }, function(result) {
       if (!chrome.runtime.lastError && result && result[0] && result[0].result) {
         var words = result[0].result;
+        // Display the most used words
         showMostUsedWords(words);
       } else {
         console.error('Failed to extract words:', chrome.runtime.lastError);
@@ -20,12 +27,14 @@ function generateWordList() {
   });
 }
 
+// Function to extract words from the webpage
 function extractWords() {
   var allText = document.body.innerText;
   var words = allText.split(/\s+/);
   return words;
 }
 
+// Function to display the most used word and common words
 function showMostUsedWords(words) {
   var mostUsedWord = document.getElementById('mostUsedWord');
   mostUsedWord.textContent = '';
@@ -47,6 +56,7 @@ function showMostUsedWords(words) {
   }
 }
 
+// Function to count the frequency of words
 function countWords(words) {
   var wordCounts = {};
   words.forEach(function(word) {
@@ -59,6 +69,7 @@ function countWords(words) {
   return wordCounts;
 }
 
+// Function to get the most used word
 function getMostUsedWord(wordCounts) {
   var commonWords = [
     'the', 'a', 'an', 'and', 'or', 'is', 'are', 'in', 'on', 'of',
@@ -85,6 +96,7 @@ function getMostUsedWord(wordCounts) {
   return mostUsedWord;
 }
 
+// Function to get the most common words
 function getMostCommonWords(wordCounts, count) {
   var commonWords = [
     'the', 'a', 'an', 'and', 'or', 'is', 'are', 'in', 'on', 'of',
