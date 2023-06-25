@@ -36,8 +36,8 @@ The code consists of the following main components:
 - Feel free to customize the appearance and functionality of the popup window in `popup.html` and `popup.js` as per your requirements.
 
 # This is in development. Please feel free to contribute to this project.  
-# Will be live on chrome extension web store soon :)
-# To DO:- UI, icons, and more features.
+- Will be live on chrome extension web store soon :)
+- To DO:- UI, icons, and more features.
 
 Made with ❤️ Anish Tipnis
 
