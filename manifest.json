@@ -4,20 +4,20 @@
     "version": "1.0",
     "permissions": ["activeTab", "scripting"],
     "action": {
-      "default_popup": "popup.html",
+      "default_popup": "/popup/popup.html",
       "default_icon": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
+        "16": "/icons/icon.png",
+        "48": "/icons/icon.png",
+        "128": "/icons/icon.png"
       }
     },
     "icons": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon.png"
+      "16": "/icons/icon.png",
+      "48": "/icons/icon.png",
+      "128": "/icons/icon.png"
     },
     "background": {
-      "service_worker": "background.js"
+      "service_worker": "/scripts/background.js"
     }
   }
   
