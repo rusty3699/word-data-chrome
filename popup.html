@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Word Cloud Extension</title>
+  <title>Word Counter</title>
   <script src="popup.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 18px;
+    }
+    button {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
-
 <body>
-  <h1>Word Used</h1>
-  <button id="generateButton">Generate Most Used Word</button>
-  <!-- <h2>Word List:</h2> -->
-  <!-- <ul id="wordList"></ul> -->
-  <h2>Most Used Word:</h2>
-  <p id="mostUsedWord"></p>
+  <h1>Word Counter</h1>
+  <button id="generateButton">Generate Word List</button>
+  <h3 id="mostUsedWord"></h3>
+  <h3>Most Common Words:</h3>
+  <ul id="mostCommonWords"></ul>
 </body>
-
 </html>
