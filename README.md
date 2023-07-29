@@ -39,5 +39,9 @@ The code consists of the following main components:
 - Will be live on chrome extension web store soon :)
 - To DO:- UI, icons, and more features.
 
+# TO DO:-
+- Publish to Chrome
+- Get User Insights
+- Save USer Insights in DB
 Made with ❤️ Anish Tipnis
 
