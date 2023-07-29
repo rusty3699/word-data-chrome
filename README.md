@@ -43,5 +43,7 @@ The code consists of the following main components:
 - Publish to Chrome
 - Get User Insights
 - Save USer Insights in DB
-Made with ❤️ Anish Tipnis
+
+
+-Made with ❤️ Anish Tipnis
 
