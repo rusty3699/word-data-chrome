@@ -45,5 +45,5 @@ The code consists of the following main components:
 - Save USer Insights in DB
 
 
-- Made with ❤️ Anish Tipnis
+ Made with ❤️ Anish Tipnis
 
