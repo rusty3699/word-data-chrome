@@ -9,7 +9,7 @@ The Word Frequency Analyzer Chrome extension is a simple tool that allows you to
 - Counts the frequency of each word.
 - Excludes common words like "the," "a," and "to" from the analysis.
 - Displays the most used word on the popup window.
-- Disokays the top 5 used words on the popup window.
+- Displays the top 5 used words on the popup window.
 
 ## How to Use
 1. Install the extension in your Chrome browser.
